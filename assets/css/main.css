@@ -296,7 +296,7 @@ h5,
 h6 {
 	font-weight: 300;
 	line-height: 1.5;
-	margin: 0 0 0.7em 0;
+	margin: 0 0 0.3em 0;
 	letter-spacing: -0.025em;
 }
 
@@ -3924,15 +3924,51 @@ body.is-preload #header.alt .logo {
 
 }
 
+.clearfix {
+	margin-bottom: 2em;
+}
+
+.flex-vertical {
+	display: flex;
+	flex-direction: column;
+	/* prevents button from stretching */
+	align-items: start;
+}
+
+.flex-vertical p {
+	margin-bottom: 1em;
+}
 
 .img-left {
 	float: left;
-	width: 30%;
-	margin-right: 15px;
+	margin-right: 1em;
+	margin-top: 10px;
+	width: 40%;
+}
+
+.img-left img{
+	/* remove extra space at the bottom caused by image being inline (space is to accomodate descenders in text)*/
+	display: block;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
 .project-desc {
 	text-align: left;
+}
+
+.button-row {
+	display: flex;
+	padding-bottom: 2em;
+	justify-content: center;
+}
+
+.button-row li {
+	list-style: none;
 }
 
 @media screen and (max-width: 910px) {
@@ -3944,5 +3980,9 @@ body.is-preload #header.alt .logo {
 
 	.project-desc {
 		text-align: center;
+	}
+
+	.flex-vertical {
+		align-items: center;
 	}
 }

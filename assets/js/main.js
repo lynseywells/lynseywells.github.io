@@ -121,3 +121,12 @@
 		});
 
 })(jQuery);
+
+// make portfolio project divs on home page match the height of their container
+// let containers = document.getElementsByClassName("clearfix");
+// let length = containers.length;
+// let children = document.getElementsByClassName("flex-vertical");
+
+// for (let i = 0; i < length; i++) {
+// 	children[i].style.height = containers[i].getBoundingClientRect().height + "px";
+// }
