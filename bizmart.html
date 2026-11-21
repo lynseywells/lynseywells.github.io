@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Bizmart Supply Co Project</title>
+	<title>Bizmart Supply Co</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -33,26 +33,21 @@
 			<section id="content" class="main">
 				<img src="images/bizmart_logo.png" alt="bizmart project logo" class="img-left" />
 				<h2>Project Summary</h2>
-				<p>This project is a three-in-one program built with Java for a fictional business; it has a POS system,
-					a
-					business management tool, and an online shop. Different features are available depending on a
-					users account type. The projects goal is to provide Bizmart Supply Co a user-friendly way to manage
-					data and conduct business both online and in-person. When the user signs in, they are presented with
-					a different interface depending on the accounts type: either customer, employee, or manager.</p>
-				<p>The customer view allows users to search for items, add them to a cart, and place an order. The
-					employee view
-					is a POS system to process transactions, and then create a receipt. The manager view allows managers
-					to generate HTML sales reports,
-					manage account data for all accounts, create discount codes, and manage product inventory.</p>
-				<p>This application relys on an SQLite database to keep track of inventory, user information, et
-					cetera. The program manages an open database connection and inserts/updates rows based on user
-					input. For example, placing an order subtracts the amount of a product ordered from the database,
-					preventing other users from order more than what's currently in stock.</p>
+				<p>
+                    This project is a three-in-one program built with Java for a fictional business; it has a POS system, a business management tool, and an online shopping page. Different features are available depending on a user. The projects goal is to provide Bizmart Supply Co a user-friendly way to manage data and conduct business both online and in-person. When the user signs in, they are presented with a different interface depending on the accounts type: either customer, employee, or manager.
+                </p>
+				<p>
+                    Customers can search for items using keywords or SKU numbers, add them to a cart, and place a delivery order. The employee page has very similar functionality, but is designed as a traditional point-of-sale system. Employees can search item by SKU or keyword to add it to the current transaction, cancel the transaction, and create a digital receipt. Managers can access everything that employees can, and they can also generate HTML sales reports, manage account data for all account types, create discount codes, and manage product inventory.
+                </p>
+				<p>
+                    This application relys on a local SQLite database to keep track of inventory, user information, et cetera. The program manages an open database connection and inserts/updates rows based on user input. For example, placing an order subtracts the quantity of products ordered from the products record in the database preventing other users from order more than what's currently in stock.
+                </p>
 			</section>
 			<ul class="button-row">
 				<li><a href="index.html" class="button">Back to Home</a></li>
-				<li><a href="https://github.com/lynseywells/bizmart-java-app" target="_blank" class="button">Download on
-						Github</a></li>
+				<li><a  href="https://github.com/lynseywells/bizmart-java-app" 
+                        target="_blank" 
+                        class="button">Download on Github</a></li>
 				<li><a href="rat-care.html" class="button">Next Project</a></li>
 			</ul>
 		</div>
